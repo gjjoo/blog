@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "description": "",
+  "main": "_gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-csso": "^1.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-plumber": "^1.0.1",
+    "gulp-size": "^2.0.0",
+    "gulp-watch": "^4.3.5",
+    "run-sequence": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gjjoo",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-jshint": "^1.11.2",
+    "jshint-stylish": "^2.0.1"
+  }
+}
