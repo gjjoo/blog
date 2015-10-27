@@ -28,7 +28,7 @@ gulp.task('watch', function() {
   watch([config.html.src], function() {
     gulp.start('html');
   });
-  // SASS
+  // CSS
   watch(config.css.src, function() {
     gulp.start('css');
   });
@@ -67,7 +67,7 @@ gulp.task('css', function() {
     }) )
 
     // 파일 크기 확인 후 화면리로드
-    .pipe( size({title: 'SASS 파일 크기: '}) )
+    .pipe( size({title: 'CSS 파일 크기: '}) )
     .pipe( connect.reload() );
 });
 
