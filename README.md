@@ -11,7 +11,10 @@
 
 ### 프론트엔드 구조
 >
- - HTML5 / CSS3
+ - HTML
+ - CSS
+   - normalize
+   - font-awesome
  - JAVASCRIPT
  - jQuery
    - modernizr plugin
