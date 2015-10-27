@@ -14,14 +14,13 @@
   while (length--) {
     method = methods[length];
 
-    // Only stub undefined methods.
     if (!console[method]) {
       console[method] = noop;
     }
   }
 }());
 
-// Ajax request setop
+// Ajax request setup
 // (function ($) {
 //   $(document).on('click', '.nav_menu a', function(e) {
 //       e.preventDefault();
