@@ -1,9 +1,7 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-/* ------------------------------------------------------------------
-  공통
------------------------------------------------------------------- */
+/* 공통 */
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -18,42 +16,38 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* ==========================================================================
-   HELPER CLASS
-   ========================================================================== */
-.clear:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.hidden {
-  display: none;
-}
-.ellipsis {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  word-wrap: normal;
-}
-
-/* ------------------------------------------------------------------
-  전체페이지
------------------------------------------------------------------- */
+/* 전체페이지 */
 #wrap {
-  max-width: 940px;
+  max-width: 980px;
   margin: 0 auto;
   box-shadow: 0 2px 70px rgba(0,0,0,.45);
 }
 
-/* ------------------------------------------------------------------
-  머릿말
------------------------------------------------------------------- */
+/* SKIP */
+.skip-to-main {
+  height: 1px;
+  overflow: hidden;
+  line-height: 44px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  z-index: 1;
+}
+.skip-to-main:focus {
+  text-align: center;
+  height: auto;
+}
+
+/* 머릿말 */
 #header {
   background-color: #474544;
   text-align: center;
@@ -62,15 +56,8 @@ a {
   content: "";
   display: table;
 }
-#header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* ------------------------------------------------------------------
-  머릿말 > 브랜드 및 로고
------------------------------------------------------------------- */
+/* 머릿말 > 브랜드 및 로고 */
 #brand {
   color: #fff;
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -80,9 +67,7 @@ a {
   color: #a8a8a8;
 }
 
-/* ------------------------------------------------------------------
-  머릿말 > 네비게이션
------------------------------------------------------------------- */
+/* 머릿말 > 네비게이션 */
 #navigation {
   position: relative;
   background-color: #474544;
@@ -109,33 +94,14 @@ a {
 #navigation .title {
   display: none;
   position: relative;
-  padding: 1em 0 1.5em;
-  font-weight: 500;
+  padding: 1em 0 1em;
+  font-weight: 600;
   color: #fff;
 }
-// #navigation .title:after {
-//   position: absolute;
-//   bottom: 0;
-//   left: 50%;
-//   content: '';
-//   margin-left: -8px;
-//   border-left: 8px solid transparent;
-//   border-right: 8px solid transparent;
-//   border-bottom: 8px solid #fff;
-// }
 #navigation > .menu > ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-#navigation > .menu > ul:before {
-  content: "";
-  display: table;
-}
-#navigation > .menu > ul:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 #navigation > .menu > ul > li {
   display: inline-block;
@@ -143,39 +109,26 @@ a {
 }
 #navigation > .menu > ul > li > a {
   display: block;
-  padding: 1em 1em 1.5em;
+  padding: 1em 1em 1em;
   font-weight: 500;
   color: #a8a8a8;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 #navigation > .menu > ul > li.active > a {
   color: #fff;
 }
-// #navigation > .menu > ul > li.active:after {
-//   position: absolute;
-//   bottom: 0;
-//   left: 50%;
-//   content: '';
-//   margin-left: -10px;
-//   border-left: 10px solid transparent;
-//   border-right: 10px solid transparent;
-//   border-bottom: 10px solid #fff;
-// }
 #navigation > .menu > ul > li > a:hover {
   color: #fff;
 }
 
-/* ------------------------------------------------------------------
-  본문
------------------------------------------------------------------- */
+/* 본문 */
 #content {
   padding: 10px 0;
   background-color: #fff;
 }
 
-/* ------------------------------------------------------------------
-  꼬릿말
------------------------------------------------------------------- */
+/* 꼬릿말 */
 #footer {
   padding: 10px 0;
   background-color: #474544;
@@ -188,9 +141,7 @@ a {
   color: #a8a8a8;
 }
 
-/* ------------------------------------------------------------------
-  모바일영역
------------------------------------------------------------------- */
+/* 모바일영역 */
 @media (max-width: 768px) {
   #navigation .title {
     display: inline-block;
@@ -204,7 +155,6 @@ a {
   #navigation > .toggle-menu.active ~ .menu {
     display: block;
     position: relative;
-    margin-top: -8px;
     text-align: left;
     overflow-y: auto;
     z-index: 1;
@@ -214,17 +164,12 @@ a {
     background-color: #474544;
     border-top: 1px solid rgba(255,255,255,0.1);
   }
-  #navigation > .toggle-menu.active ~ .menu > ul > li.active:after {
-    display: none;
-  }
   #navigation > .toggle-sidebar {
     display: block;
   }
 }
 
-/* ------------------------------------------------------------------
-  HOME PAGE
------------------------------------------------------------------- */
+/* HOME PAGE */
 .home_grid {
   margin: 10px 0 10px 10px;
   overflow: hidden;
@@ -242,10 +187,9 @@ a {
 }
 .home_grid article {
   margin: 0 10px 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px #ddd;
   background-color: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 5px;
 }
 .home_grid img {
   width: 100%;
@@ -269,6 +213,50 @@ a {
   }
 }
 
+.mask_box {
+  padding: 20px;
+  background-color: #fff;
+}
+.mask_box h3 {
+  margin-top: 0;
+  margin-bottom: 15px;  
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 24px; 
+  color: #333;
+}
+.mask_box h3 a {
+  display: block;
+}
+.mask_box .post_detail {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ebeaea;
+  border-bottom: 1px solid #ebeaea;
+  margin-left: 0px;
+}
+.mask_box .post_detail li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 12px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.mask_box .post_detail li i {
+  margin-right: 5px;
+}
+.mask_box .post_detail li + li {
+  padding-left: 15px;
+}
+.mask_box p {
+  color: #555;
+  line-height: 24px;
+  margin: 0;
+}
+
+/*
 .post_date,
 .post_tit,
 .post_content,
@@ -317,56 +305,10 @@ a {
 .post_footer .fa-heart {
   margin-top: 1px;
 }
+*/
 
 
-/* ------------------------------------------------------------------
-  ABOUT PAGE
------------------------------------------------------------------- */
-/* common */
-.bar {
-  display: inline-block;
-  background-color: #c5a47e;
-  width: 50px;
-  height: 2px;
-  vertical-align: middle;
-}
-.square {
-  display: inline-block;
-  background-color: #c5a47e;
-  width: 4px;
-  height: 7px;
-  margin: 0 10px;
-}
-.graphic_skils header,
-.programming_skils header,
-.education header,
-.experiences  header{
-  text-align: center;
-}
-.graphic_skils,
-.programming_skils {
-  float: left;
-  width: 50%;
-}
-@media (max-width: 767px) {
-  .graphic_skils,
-  .programming_skils {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .graphic_skils,
-  .programming_skils {
-    width: 50%;
-  }
-}
-@media (min-width: 1025px) {
-  .graphic_skils,
-  .programming_skils {
-    width: 50%;
-  }
-}
-
+/* ABOUT PAGE */
 /* About me */
 .about_me {
   margin-top: -10px;
@@ -405,7 +347,7 @@ a {
 .ab .name {
   color: #fff;
 }
-.ab .name h3 {
+.ab .name h2 {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2em;
@@ -436,13 +378,16 @@ a {
   position: relative;
   display: block;
 }
+.ab_tabs li:hover a {
+  color: #fff;
+}
 .ab_tabs li.active a {
   color: #fff;
 }
 .ab_tabs li a {
   position: relative;
   display: block;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out;
   padding: 0 10px 18px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
@@ -502,8 +447,36 @@ a {
 }
 
 /* Graphic skils */
-.graphic_skils_content {
+.graphic_skils {
   padding: 10px;
+}
+.graphic_skils header {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+.graphic_skils header:before, 
+.graphic_skils header:after {
+  position: absolute;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #777777;
+  line-height: 0;
+}
+.graphic_skils header:before {
+  content: "\201C";
+  left: 0;
+  top: 20px;
+}
+.graphic_skils header:after {
+  content: "\201D";
+  right: -12px;
+  bottom: 10px;
+}
+.graphic_skils_content {
+  width: 300px;
+  padding-left: 20px;
+  color: #6b6e80;
 }
 .graphic_skils_content .ico_box {
   float: right;
@@ -511,8 +484,36 @@ a {
 }
 
 /* Programming skils */
-.programming_skils_content {
+.programming_skils {
   padding: 10px;
+}
+.programming_skils header {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+.programming_skils header:before, 
+.programming_skils header:after {
+  position: absolute;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #777777;
+  line-height: 0;
+}
+.programming_skils header:before {
+  content: "\201C";
+  left: 0;
+  top: 20px;
+}
+.programming_skils header:after {
+  content: "\201D";
+  right: -12px;
+  bottom: 10px;
+}
+.programming_skils_content {
+  width: 300px;
+  padding-left: 20px;
+  color: #6b6e80;
 }
 .programming_skils_content .ico_box {
   float: right;
@@ -520,6 +521,32 @@ a {
 }
 
 /* Education */
+.education {
+  padding: 10px;
+}
+.education header {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+.education header:before, 
+.education header:after {
+  position: absolute;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #777777;
+  line-height: 0;
+}
+.education header:before {
+  content: "\201C";
+  left: 0;
+  top: 20px;
+}
+.education header:after {
+  content: "\201D";
+  right: -12px;
+  bottom: 10px;
+}
 .edu_list {
   padding: 0 10px 10px 10px;
 }
@@ -544,8 +571,38 @@ a {
 .edu_list .edu_body {
   margin-left: 140px;
 }
+.edu_time, .edu_content {
+  margin-top: -5px;
+  color: #6b6e80;
+}
 
 /* Experiences */
+.experiences {
+  padding: 10px;
+}
+.experiences header {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+.experiences header:before, 
+.experiences header:after {
+  position: absolute;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #777777;
+  line-height: 0;
+}
+.experiences header:before {
+  content: "\201C";
+  left: 0;
+  top: 20px;
+}
+.experiences header:after {
+  content: "\201D";
+  right: -12px;
+  bottom: 10px;
+}
 .timeline {
   position: relative;
   margin-top: 10px;
@@ -563,7 +620,7 @@ a {
   display: block;
   width: 1px;
   top: 10px;
-  left: 85px;
+  left: 90px;
   bottom: 0;
   z-index: 1;
 }
@@ -591,7 +648,7 @@ a {
   height: 20px;
   font-size: 14px;
   text-align: center;
-  left: 50px;
+  left: 55px;
   top: 10px;
   z-index: 100;
   padding: 2px;
@@ -606,8 +663,8 @@ a {
 }
 .timeline_time {
   float: left;
-  width: 43px;
-  margin-top: 10px;
+  margin-top: 6px;
+  width: 48px;
   text-align: right;
 }
 .timeline_time > small {
@@ -615,16 +672,18 @@ a {
 }
 .timeline_content {
   margin-top: -10px;
-  margin-left: 105px;
+  margin-left: 110px;
   padding-right: 10px;
 }
+.timeline_breakdown {
+  margin-top: -5px;
+  color: #6b6e80;
+}
 .timeline_breakpoint {
-  font-size: 10px;
+  font-size: 12px;
 }
 
-/* ==========================================================================
-   PORTFOLIO PAGE
-   ========================================================================== */
+/* PORTFOLIO PAGE */
 .nav-filter {
   padding: 0 0 10px;
 }
@@ -694,9 +753,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  // padding: 4px;
   background-size: cover;
-  // background-color: #fff;
   border: 0 none;
   box-shadow: 0 1px 2px rgba(164, 158, 147, 0.6);
 }
@@ -713,7 +770,6 @@ a {
   bottom: 0px;
   left: 0;
   right: 10px;
-  // margin: 4px;
   background-color: rgba(0,0,0,0.75);
   text-align: center;
   opacity: 0;
@@ -771,4 +827,61 @@ a {
   .gallery-item {
     width: 33.3333333%;
   }
+}
+
+
+/* BLOG */
+.blog_post {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.blog_post img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+.blog_post .blog_imgbox {
+  padding: 20px 20px 0 20px;
+}
+.blog_post .blog_txtbox {
+  padding: 20px 20px 0 20px;
+}
+.blog_post .post_detail {
+  margin-bottom: 0px;
+  border-top: 1px solid #ebeaea;
+  border-bottom: 1px solid #ebeaea;
+  margin-left: 0px;
+}
+.blog_post .post_detail li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 12px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.blog_post .post_detail li i {
+  margin-right: 5px;
+}
+.blog_post .post_detail li + li {
+  padding-left: 15px;
+}
+.blog_post .post_title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.blog_post .post_desc {
+  color: #555;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.blog_post .post_readmore {
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #474544;
+    border: 1px solid #434a54;
+    border-radius: 4px;
 }
