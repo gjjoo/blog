@@ -3,6 +3,13 @@
  */
 $(function() {
 
+  $(window).on('keydown', function(e) {
+    var key = e.keyCode || e.which;
+    if (key === 71 && e.shiftKey) {
+      $('#wrap').toggleClass('grid');
+    }
+  });
+
   // 모바일 메뉴 클릭 시
   $('.toggle-menu').on('click', function(e) {
     var $this = $(this);
@@ -49,7 +56,7 @@ $(function() {
       },
       error: function(xhr, ajaxOptions, thrownError) {
         // console.log('error');
-        container.html('<h4 style="margin-top:10px; display:block; text-align:left"><i class="fa fa-warning"></i>페이지를 찾을 수 없습니다.</h4>');
+        container.html('<h4 style="display:block; padding:50px 0; text-align:center"><i class="fa fa-warning"></i>페이지를 찾을 수 없습니다.</h4>');
       },
       async: false
     });

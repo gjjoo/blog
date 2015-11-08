@@ -8,7 +8,7 @@
           box-sizing: border-box;
 }
 body {
-  font-family: "나눔고딕",NanumGothic,"맑은고딕",MalgunGothic;  
+  font-family: "나눔고딕",NanumGothic,"맑은고딕",MalgunGothic;
   font-size: 14px;
   color: #333;
   background: url(../img/mybg.png) #fff;
@@ -25,9 +25,20 @@ a {
 
 /* 전체페이지 */
 #wrap {
-  max-width: 980px;
+  position: relative;
+  max-width: 960px;
   margin: 0 auto;
   box-shadow: 0 2px 70px rgba(0,0,0,.45);
+}
+#wrap.grid:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/guide.png);
+  z-index: 1000;
 }
 
 /* SKIP */
@@ -219,11 +230,11 @@ a {
 }
 .mask_box h3 {
   margin-top: 0;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
   font-size: 1.8em;
   font-weight: 500;
   letter-spacing: normal;
-  line-height: 24px; 
+  line-height: 24px;
   color: #333;
 }
 .mask_box h3 a {
@@ -363,14 +374,14 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  line-height: 0;  
+  line-height: 0;
 }
 .ab_tabs ul {
   display: inline-block;
   border-bottom: 0;
   margin-bottom: 0;
   padding-left: 0;
-  list-style: none;  
+  list-style: none;
 }
 .ab_tabs li {
   float: left;
@@ -455,7 +466,7 @@ a {
   position: relative;
   padding-left: 10px;
 }
-.graphic_skils header:before, 
+.graphic_skils header:before,
 .graphic_skils header:after {
   position: absolute;
   font-size: 30px;
@@ -492,7 +503,7 @@ a {
   position: relative;
   padding-left: 10px;
 }
-.programming_skils header:before, 
+.programming_skils header:before,
 .programming_skils header:after {
   position: absolute;
   font-size: 30px;
@@ -529,7 +540,7 @@ a {
   position: relative;
   padding-left: 10px;
 }
-.education header:before, 
+.education header:before,
 .education header:after {
   position: absolute;
   font-size: 30px;
@@ -585,7 +596,7 @@ a {
   position: relative;
   padding-left: 10px;
 }
-.experiences header:before, 
+.experiences header:before,
 .experiences header:after {
   position: absolute;
   font-size: 30px;
@@ -677,6 +688,7 @@ a {
 }
 .timeline_breakdown {
   margin-top: -5px;
+  margin-bottom: 0;
   color: #6b6e80;
 }
 .timeline_breakpoint {
@@ -685,7 +697,6 @@ a {
 
 /* PORTFOLIO PAGE */
 .nav-filter {
-  padding: 0 0 10px;
 }
 .nav {
   padding-left: 0;
