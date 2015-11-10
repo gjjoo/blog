@@ -36,7 +36,7 @@ a {
  */
 #wrap {
   position: relative;
-  max-width: 960px;
+  max-width: 1056px;
   margin: 30px auto;
   border-radius: 5px;
   background-color: #474544;
@@ -82,6 +82,7 @@ a {
 #header {
   border-radius: 5px 5px 0 0;
   background-color: #474544;
+  background-image: linear-gradient(to bottom,#474544,#333);
   text-align: center;
 }
 #header:before {
@@ -100,6 +101,7 @@ a {
 }
 #brand > h1 > small {
   display: block;
+  font-size: 60%;
   color: #a8a8a8;
 }
 
@@ -118,7 +120,7 @@ a {
   width: 40px;
   height: 40px;
   padding: 6px 12px;
-  margin-top: 3px;
+  margin-top: 1px;
   background-color: transparent;
   border: 0;
   color: #fff;
@@ -185,6 +187,7 @@ a {
   padding: 10px 0;
   border-radius: 0 0 5px 5px;
   background-color: #474544;
+  background-image: linear-gradient(to top,#474544,#333);
   text-align: center;
 }
 #footer .copyright {
@@ -203,6 +206,7 @@ a {
   #wrap {
     margin-top: 0;
     margin-bottom: 0;
+    border-radius: 0;
   }
   #navigation .title {
     display: inline-block;
@@ -344,7 +348,7 @@ a {
   background-size: cover;
   border: 0;
   background: url(../img/image6.jpg) 50% 0 no-repeat;
-  height: 450px;
+  height: 400px;
 }
 .ab .ab_center {
   display: table-cell;
@@ -1020,6 +1024,40 @@ a {
   color: #F86517;
   font-weight: bold;
 }
+.sticky-label {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  padding: 3px 5px 3px 20px;
+  background-color: #CC3333;
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.sticky-label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 16px;
+  height: 100%;
+  background-color: #CC3333;
+  transform: skewX(-15deg);
+  -o-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  -moz-transform: skewX(-15deg);
+  -webkit-transform: skewX(-15deg);
+  z-index: -1;
+}
+.sticky-bar {
+  display: block;
+  height: 1px;
+  margin-top: -17px;
+  margin-bottom: 28px;
+  background-color: #e5e5e5;
+}
 
 .blog_list2 {
   padding: 20px;
@@ -1027,7 +1065,7 @@ a {
 }
 .blog_list2 li {
   padding: 5px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e5e5e5;
 }
 .blog_list2 .date {
   margin-right: 10px;

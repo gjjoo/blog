@@ -199,7 +199,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 a { color: inherit; text-decoration: none; }
 
 /** -------------------------------- 전체페이지 -------------------------------- */
-#wrap { position: relative; max-width: 960px; margin: 30px auto; border-radius: 5px; background-color: #474544; box-shadow: 0 2px 70px rgba(0, 0, 0, 0.45); }
+#wrap { position: relative; max-width: 1056px; margin: 30px auto; border-radius: 5px; background-color: #474544; box-shadow: 0 2px 70px rgba(0, 0, 0, 0.45); }
 
 #wrap.grid:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/guide.png); z-index: 1000; }
 
@@ -209,19 +209,19 @@ a { color: inherit; text-decoration: none; }
 .skip-to-main:focus { text-align: center; height: auto; }
 
 /** -------------------------------- 머릿말 -------------------------------- */
-#header { border-radius: 5px 5px 0 0; background-color: #474544; text-align: center; }
+#header { border-radius: 5px 5px 0 0; background-color: #474544; background-image: linear-gradient(to bottom, #474544, #333); text-align: center; }
 
 #header:before { content: ""; display: table; }
 
 /** -------------------------------- 머릿말 > 브랜드 및 로고 -------------------------------- */
 #brand { color: #fff; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 
-#brand > h1 > small { display: block; color: #a8a8a8; }
+#brand > h1 > small { display: block; font-size: 60%; color: #a8a8a8; }
 
 /** -------------------------------- 머릿말 > 네비게이션 -------------------------------- */
 #navigation { position: relative; background-color: #474544; color: #a8a8a8; }
 
-#navigation > .btn { display: inline-block; width: 40px; height: 40px; padding: 6px 12px; margin-top: 3px; background-color: transparent; border: 0; color: #fff; }
+#navigation > .btn { display: inline-block; width: 40px; height: 40px; padding: 6px 12px; margin-top: 1px; background-color: transparent; border: 0; color: #fff; }
 
 #navigation > .toggle-menu { display: none; float: left; }
 
@@ -245,12 +245,12 @@ a { color: inherit; text-decoration: none; }
 #content { padding: 10px 0; background-color: #fff; }
 
 /** -------------------------------- 꼬릿말 -------------------------------- */
-#footer { padding: 10px 0; border-radius: 0 0 5px 5px; background-color: #474544; text-align: center; }
+#footer { padding: 10px 0; border-radius: 0 0 5px 5px; background-color: #474544; background-image: linear-gradient(to top, #474544, #333); text-align: center; }
 
 #footer .copyright { display: block; font-size: 14px; font-weight: 500; color: #a8a8a8; }
 
 /** -------------------------------- 모바일영역 -------------------------------- */
-@media (max-width: 768px) { #wrap { margin-top: 0; margin-bottom: 0; }
+@media (max-width: 768px) { #wrap { margin-top: 0; margin-bottom: 0; border-radius: 0; }
   #navigation .title { display: inline-block; }
   #navigation .menu { display: none; }
   #navigation .menu > ul > li:hover a { background-color: #333; }
@@ -292,7 +292,7 @@ a { color: inherit; text-decoration: none; }
 /* About me */
 .about_me { margin-top: -10px; }
 
-.ab { position: relative; display: table; width: 100%; padding-bottom: 48px; margin-bottom: 0; text-align: center; background-size: cover; border: 0; background: url(../img/image6.jpg) 50% 0 no-repeat; height: 450px; }
+.ab { position: relative; display: table; width: 100%; padding-bottom: 48px; margin-bottom: 0; text-align: center; background-size: cover; border: 0; background: url(../img/image6.jpg) 50% 0 no-repeat; height: 400px; }
 
 .ab .ab_center { display: table-cell; width: 1000000px; text-align: center; vertical-align: middle; margin-right: auto; margin-left: auto; }
 
@@ -534,9 +534,15 @@ a { color: inherit; text-decoration: none; }
 
 #pagenavi .active { color: #F86517; font-weight: bold; }
 
+.sticky-label { display: inline-block; position: relative; margin-left: 10px; padding: 3px 5px 3px 20px; background-color: #CC3333; color: #fff; line-height: 30px; font-size: 18px; text-transform: uppercase; z-index: 1; }
+
+.sticky-label:after { content: ''; position: absolute; top: 0; right: -8px; width: 16px; height: 100%; background-color: #CC3333; transform: skewX(-15deg); -o-transform: skewX(-15deg); -ms-transform: skewX(-15deg); -moz-transform: skewX(-15deg); -webkit-transform: skewX(-15deg); z-index: -1; }
+
+.sticky-bar { display: block; height: 1px; margin-top: -17px; margin-bottom: 28px; background-color: #e5e5e5; }
+
 .blog_list2 { padding: 20px; font-size: 12px; }
 
-.blog_list2 li { padding: 5px 0; border-bottom: 1px solid #ccc; }
+.blog_list2 li { padding: 5px 0; border-bottom: 1px solid #e5e5e5; }
 
 .blog_list2 .date { margin-right: 10px; }
 
