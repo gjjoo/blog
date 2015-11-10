@@ -3,6 +3,7 @@
  */
 $(function() {
 
+  // 그리드 표시
   $(window).on('keydown', function(e) {
     var key = e.keyCode || e.which;
     if (key === 71 && e.shiftKey) {
@@ -23,7 +24,10 @@ $(function() {
   $(document).on('click', '.menu a', function(e) {
     e.preventDefault();
     var $this = $(e.currentTarget);
-    loadURL($this.attr('href'), $('#content'), $this);
+    var href = $this.attr('href');
+    if (href !== '#') {
+      loadURL($this.attr('href'), $('#content'), $this);
+    }
   });
 
   function loadURL(url, container, item) {
