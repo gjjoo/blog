@@ -94,11 +94,11 @@ $(function() {
   loadURL('home.html', $('#content'), $('.menu li').eq(0).children());
 
   // 메뉴링크 클릭 시 페이지 로드
-  $(document).on('click', '.menu a', function(e) {
+  $(document).on('click', 'a', function(e) {
     e.preventDefault();
     var $this = $(e.currentTarget);
     var href = $this.attr('href');
-    if (href !== '#') {
+    if (href !== '#' && href.substring(0, 1) === '/') {
       loadURL($this.attr('href'), $('#content'), $this);
     }
   });

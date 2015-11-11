@@ -265,6 +265,7 @@ a {
 }
 .home_grid img {
   width: 100%;
+  height: auto;
 }
 @media (max-width: 479px) {
   .home_grid-sizer,
@@ -465,8 +466,7 @@ a {
 .photo-item img {
   display: block;
   width: 100%;
-  height: 100%;
-  background-size: cover;
+  height: auto;
   border: 0 none;
   box-shadow: 0 1px 2px rgba(164, 158, 147, 0.6);
 }
@@ -781,8 +781,7 @@ a {
 .gallery-item img {
   display: block;
   width: 100%;
-  height: 100%;
-  background-size: cover;
+  height: auto;
   border: 0 none;
   box-shadow: 0 1px 2px rgba(164, 158, 147, 0.6);
 }
@@ -870,7 +869,7 @@ a {
 }
 .blog_post img {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-bottom: 0;
 }
 .blog_post .blog_imgbox {
@@ -921,10 +920,8 @@ a {
 #sidebar {
   margin-top: 10px;
   margin-left: 4%;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 @media (max-width: 980px) {
   #sidebar {
@@ -1015,6 +1012,8 @@ a {
 .tag_list a {
   color: #888;
 }
+
+/* pagenavigation */
 #pagenavi {
   padding: 20px;
   font-size: 13px;
@@ -1078,3 +1077,68 @@ a {
   font-size: 10px;
   color: #555;
 }
+
+/**
+ * --------------------------------
+ * BLOG_DETAIL PAGE
+ * --------------------------------
+ */
+.blog_sharebox {
+  padding: 0 20px;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+}
+.blog_sharebox .tag_list,
+.blog_sharebox .share_list {
+  padding-bottom: 10px;
+}
+.blog_sharebox h4 {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.blog_sharebox ul {
+  display: inline-block;
+}
+.blog_sharebox li {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 12px;
+  font-style: italic;
+  color: #888;
+}
+.blog_sharebox li > a:after {
+  content: ',';
+}
+.blog_sharebox li:last-child > a:after {
+  content: '';
+}
+
+/* Leave Commnet */
+.leave_comment {
+  text-align: left;
+}
+.leave_comment textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  resize: none;
+}
+.leave_comment textarea::-webkit-input-placeholder {
+  padding: 15px;
+}
+.cmt_post_box {
+  position: relative;
+  padding-right: 90px;
+}
+.btn_cmt_post {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 17px 24px;
+  color: #fff;
+  background-color: #474544;
+  border: 1px solid #434a54;
+}
+
+
