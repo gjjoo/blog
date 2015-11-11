@@ -554,19 +554,17 @@ a { color: inherit; text-decoration: none; }
 /** -------------------------------- BLOG_DETAIL PAGE -------------------------------- */
 .blog_sharebox { padding: 0 20px; border-bottom: 1px dashed #ccc; text-align: center; }
 
-.blog_sharebox .tag_list, .blog_sharebox .share_list { padding-bottom: 10px; }
+.blog_sharebox .tag_list, .blog_sharebox .share_list, .blog_sharebox .leave_comment, .blog_sharebox .comment_list { padding-bottom: 10px; }
 
 .blog_sharebox h4 { margin: 10px 0; font-size: 14px; }
 
-.blog_sharebox ul { display: inline-block; }
-
-.blog_sharebox li { display: inline-block; margin-right: 5px; font-size: 12px; font-style: italic; color: #888; }
+.tag_list li, .share_list li { display: inline-block; margin-right: 5px; font-size: 12px; font-style: italic; color: #888; }
 
 .blog_sharebox li > a:after { content: ','; }
 
 .blog_sharebox li:last-child > a:after { content: ''; }
 
-/* Leave Commnet */
+/* Leave Comment */
 .leave_comment { text-align: left; }
 
 .leave_comment textarea { display: block; width: 100%; border: 1px solid #ccc; overflow: hidden; resize: none; }
@@ -576,3 +574,18 @@ a { color: inherit; text-decoration: none; }
 .cmt_post_box { position: relative; padding-right: 90px; }
 
 .btn_cmt_post { position: absolute; top: 0; right: 0; padding: 17px 24px; color: #fff; background-color: #474544; border: 1px solid #434a54; }
+
+/* Comment List */
+.comment_list { text-align: left; font-style: normal; color: #333; }
+
+.comment_list ul ul { margin-left: 80px; }
+
+.comment_list li { display: block; }
+
+.comment_list h4 { font-size: 14px; }
+
+.comment_list .comment_reply { font-style: italic; color: #CC3333; }
+
+.comment_list .comment_reply, .comment_list p { font-size: 12px; }
+
+.comment_list img { width: 60px; height: 60px; margin-right: 20px; float: left; }
