@@ -114,7 +114,7 @@ a {
   position: relative;
   background-color: #474544;
   color: #a8a8a8;
-  z-index: 100;
+  z-index: 101;
 }
 #navigation > .btn {
   display: inline-block;
@@ -209,6 +209,12 @@ a {
     margin-bottom: 0;
     border-radius: 0;
   }
+  #header {
+    z-index: 100;
+  }
+  #navigation {
+    z-index: 101;
+  }
   #navigation .title {
     display: inline-block;
   }
@@ -228,7 +234,7 @@ a {
     right: 0;
     text-align: left;
     overflow-y: auto;
-    z-index: 1;
+    z-index: 102;
   }
   #navigation > .toggle-menu.active ~ .menu li {
     display: block;
@@ -237,6 +243,9 @@ a {
   }
   #navigation > .toggle-sidebar {
     display: block;
+  }
+  #content {
+    z-index: 100;
   }
 }
 
