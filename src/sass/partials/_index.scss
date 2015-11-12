@@ -214,6 +214,13 @@ a {
   }
   #navigation .menu {
     display: none;
+    text-align: left;
+    overflow-y: auto;
+  }
+  #navigation .menu li {
+    display: block;
+    background-color: #474544;
+    border-top: 1px solid rgba(255,255,255,0.1);
   }
   #navigation .menu > ul > li:hover a {
     background-color: #333;
@@ -221,18 +228,17 @@ a {
   #navigation > .toggle-menu {
     display: inline-block;
   }
-  #navigation > .toggle-menu.active ~ .menu {
-    display: block;
-    position: relative;
-    text-align: left;
-    overflow-y: auto;
-    z-index: 1;
-  }
-  #navigation > .toggle-menu.active ~ .menu li {
-    display: block;
-    background-color: #474544;
-    border-top: 1px solid rgba(255,255,255,0.1);
-  }
+  // #navigation > .toggle-menu.active ~ .menu {
+  //   display: block;
+  //   text-align: left;
+  //   overflow-y: auto;
+  //   z-index: 1;
+  // }
+  // #navigation > .toggle-menu.active ~ .menu li {
+  //   display: block;
+  //   background-color: #474544;
+  //   border-top: 1px solid rgba(255,255,255,0.1);
+  // }
   #navigation > .toggle-sidebar {
     display: block;
   }
