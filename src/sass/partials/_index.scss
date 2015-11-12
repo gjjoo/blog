@@ -229,9 +229,7 @@ a {
   }
   #navigation > .toggle-menu.active ~ .menu {
     display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: relative;
     text-align: left;
     overflow-y: auto;
     z-index: 102;
