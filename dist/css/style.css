@@ -252,7 +252,7 @@ a { color: inherit; text-decoration: none; }
 /** -------------------------------- 모바일영역 -------------------------------- */
 @media (max-width: 768px) { #wrap { margin-top: 0; margin-bottom: 0; border-radius: 0; }
   #navigation .title { display: inline-block; }
-  #navigation .menu { display: none; text-align: left; overflow-y: auto; }
+  #navigation .menu { display: none; position: absolute; left: 0; right: 0; text-align: left; overflow-y: auto; }
   #navigation .menu li { display: block; background-color: #474544; border-top: 1px solid rgba(255, 255, 255, 0.1); }
   #navigation .menu > ul > li:hover a { background-color: #333; }
   #navigation > .toggle-menu { display: inline-block; }
