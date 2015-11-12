@@ -1,0 +1,43 @@
+{
+  "name": "zoo-blog",
+  "version": "0.0.1",
+  "homepage": "https://github.com/gjjoo/blog",
+  "authors": [
+    "gjjoo <joogeunjae@gmail.com>"
+  ],
+  "description": "ZOO BLOG",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "detectizr": "~2.2.0",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "normalize-css": "~3.0.3",
+    "susy": "~2.2.6"
+  },
+  "preen": {
+    "jquery": [
+      "dist/*.js"
+    ],
+    "susy": [
+      "sass/**"
+    ],
+    "detectizr": [
+      "dist/*.js"
+    ],
+    "font-awesome": [
+      "css/**",
+      "fonts/**",
+      "sass/**"
+    ],
+    "normalize-css": [
+      "*.css"
+    ]
+  }
+}
