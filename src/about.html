@@ -1,268 +1,353 @@
-<div class="about_me">
-  <div class="ab">
-    <div class="ab_center">
+<!doctype html>
+<!--[if !IE]><!-->
+<html lang="ko-KR" class="no-js">
+<!--<![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie lt-ie10 ie8 no-js"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie lt-ie10 ie9 no-js"><![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ZOO BLOG</title>
+  <meta name="description" content="blog,weblog,블로그">
+  <meta name="author" content="gjjoo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <div class="ab_content">
-        <div class="avatar">
-          <img src="img/avatar-dhg.png" alt="Circle Image">
+  <link rel="stylesheet" href="css/normalize/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/vendor/modernizr-3.2.0.min.js"></script>
+  <script src="js/libs/detectizr/dist/detectizr.min.js"></script>
+
+  <script>
+    Detectizr.detect({detectScreen:false});
+  </script>
+
+</head>
+<body>
+  <!-- skip -->
+  <a href="#content" class="skip-to-main" role="button">본문 바로가기</a>
+
+  <!-- 전체페이지 -->
+  <div id="wrap">
+
+    <!-- 머릿말 -->
+    <header id="header">
+      <!-- 브랜드 및 로고 -->
+      <div id="brand">
+        <h1><a href="http://localhost:8080">ZOO BLOG</a><small>Glad to meet you!</small></h1>
+      </div>
+      <!-- //브랜드 및 로고 -->
+
+      <!-- 네비게이션 -->
+      <nav id="navigation">
+        <!-- 모바일용 메뉴 버튼 -->
+        <button type="button" class="btn toggle-menu"><i class="fa fa-bars fa-lg" role="button" aria-label="메뉴"></i></button>
+
+        <!-- 모바일용 사이드바 버튼 -->
+        <button class="btn toggle-sidebar"><i class="fa fa-cog fa-lg" role="button" aria-label="사이드바"></i></button>
+
+        <!-- 모바일용 페이지 제목 -->
+        <div class="title">
+          ABOUT
         </div>
 
-        <div class="name">
-          <h2>주근재</h2>
+        <!-- PC 및 모바일용 메뉴 -->
+        <div class="menu">
+          <ul>
+            <li><a href="/home.html">HOME</a></li>
+            <li class="active"><a href="/about.html">ABOUT</a></li>
+            <li><a href="/portfolio.html">PORTFOLIO</a></li>
+            <li><a href="/blog.html">BLOG</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+          </ul>
         </div>
+      </nav>
+      <!-- //네비게이션 -->
+    </header>
+    <!-- //머릿말 -->
 
-        <div class="intro">
-          <p>국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.</p>
+    <!-- 본문 -->
+    <section id="content">
+      <div class="about_me">
+        <div class="ab">
+          <div class="ab_center">
+
+            <div class="ab_content">
+              <div class="avatar">
+                <img src="img/avatar-dhg.png" alt="Circle Image">
+              </div>
+
+              <div class="name">
+                <h2>주근재</h2>
+              </div>
+
+              <div class="intro">
+                <p>국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.</p>
+              </div>
+            </div>
+
+            <nav class="ab_tabs">
+              <ul class="clear">
+                <li class="active"><a href="#tab_photos">Photos</a></li>
+                <li><a href="#tab_skils">Skils</a></li>
+                <li><a href="#tab_experience">Experiences</a></li>
+              </ul>
+            </nav>
+
+          </div>
         </div>
       </div>
 
-      <nav class="ab_tabs">
-        <ul class="clear">
-          <li class="active"><a href="#tab_photos">Photos</a></li>
-          <li><a href="#tab_skils">Skils</a></li>
-          <li><a href="#tab_experience">Experiences</a></li>
-        </ul>
-      </nav>
+      <div id="tab_photos" class="photos tab_content">
+        <div class="photo">
+          <div class="photo-sizer"></div>
+          <a class="photo-item" href="img/myphotos/pic1.jpg" rel="photo" title="사진1">
+            <img src="img/myphotos/pic1.jpg" alt="pic1">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic2.jpg" rel="photo" title="사진2">
+            <img src="img/myphotos/pic2.jpg" alt="pic2">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic3.jpg" rel="photo" title="사진3">
+            <img src="img/myphotos/pic3.jpg" alt="pic3">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic4.jpg" rel="photo" title="사진4">
+            <img src="img/myphotos/pic4.jpg" alt="pic4">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic5.jpg" rel="photo" title="사진5">
+            <img src="img/myphotos/pic5.jpg" alt="pic5">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic6.jpg" rel="photo" title="사진6">
+            <img src="img/myphotos/pic6.jpg" alt="pic6">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic7.jpg" rel="photo" title="사진7">
+            <img src="img/myphotos/pic7.jpg" alt="pic7">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic1.jpg" rel="photo" title="사진8">
+            <img src="img/myphotos/pic1.jpg" alt="pic8">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic2.jpg" rel="photo" title="사진9">
+            <img src="img/myphotos/pic2.jpg" alt="pic9">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic3.jpg" rel="photo" title="사진10">
+            <img src="img/myphotos/pic3.jpg" alt="pic10">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic4.jpg" rel="photo" title="사진11">
+            <img src="img/myphotos/pic4.jpg" alt="pic11">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic5.jpg" rel="photo" title="사진12">
+            <img src="img/myphotos/pic5.jpg" alt="pic12">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic6.jpg" rel="photo" title="사진13">
+            <img src="img/myphotos/pic6.jpg" alt="pic13">
+          </a>
+          <a class="photo-item" href="img/myphotos/pic7.jpg" rel="photo" title="사진14">
+            <img src="img/myphotos/pic7.jpg" alt="pic14">
+          </a>
+        </div>
+      </div>
 
-    </div>
+      <div id="tab_skils" class="tab_content">
+        <div class="graphic_skils">
+          <header>
+            <h3>GRAPHIC SKILS</h3>
+          </header>
+          <div class="graphic_skils_content">
+            <p>PHOTOSHOP
+              <span class="ico_box">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+              </span>
+            </p>
+            <p>SKETCH
+              <span class="ico_box">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="programming_skils">
+          <header>
+            <h3>PROGRAMMING SKILS</h3>
+          </header>
+          <div class="programming_skils_content">
+            <p>HTML &amp; CSS
+              <span class="ico_box">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </span>
+            </p>
+            <p>JAVASCRIPT
+              <span class="ico_box">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </span>
+            </p>
+            <p>JAVA
+              <span class="ico_box">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </span>
+            </p>
+            <p>PYTHON
+              <span class="ico_box">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </span>
+            </p>
+            <p>SQL
+              <span class="ico_box">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab_experience" class="tab_content">
+        <article class="education">
+          <header>
+            <h3>EDUCATION</h3>
+          </header>
+          <div class="edu_list clear">
+            <ul>
+              <li>
+                <div class="edu_header">
+                  <p class="edu_company"><strong>KIPFA</strong></p>
+                  <p class="edu_time">2015.11 ~ 2016.1</p>
+                </div>
+                <div class="edu_body">
+                  <p class="edu_job"><strong>SASS &amp; Framworks</strong></p>
+                  <p class="edu_content">SASS는 물론 프레임웍인 Bourbon, Compass, Susy 등을 공부함</p>
+                </div>
+              </li>
+              <li>
+                <div class="edu_header">
+                  <p class="edu_company"><strong>SK PLANET</strong></p>
+                  <p class="edu_time">2015.11</p>
+                </div>
+                <div class="edu_body">
+                  <p class="edu_job"><strong>NOSQL / Nodejs</strong></p>
+                  <p class="edu_content">MongoDB, Redis, Hadoop, Node.js, Express 등을 공부함</p>
+                </div>
+              </li>
+              <li>
+                <div class="edu_header">
+                  <p class="edu_company"><strong>모노라움</strong></p>
+                  <p class="edu_time">2015.9 ~ 2015.11</p>
+                </div>
+                <div class="edu_body">
+                  <p class="edu_job"><strong>웹퍼블리셔 마스터</strong></p>
+                  <p class="edu_content">웹표준 및 웹접근서에 대해 학습하고, HTML / CSS / JAVASCRIPT 는 물론 반응형 웹, PC, 모바일에 대한 환경 코딩을 공부함</p>
+                </div>
+              </li>
+              <li>
+                <div class="edu_header">
+                  <p class="edu_company"><strong>패스트캠퍼스</strong></p>
+                  <p class="edu_time">2015.1 ~ 2016.1</p>
+                </div>
+                <div class="edu_body">
+                  <p class="edu_job"><strong>프론트엔드 / UX디자인 / 웹서비스마스터</strong></p>
+                  <p class="edu_content">UI/UX디자인, 자바스크립트, jQuery, Python, Django에 대해 공부함</p>
+                </div>
+              </li>
+              <li>
+                <div class="edu_header">
+                  <p class="edu_company"><strong>그린아카데미</strong></p>
+                  <p class="edu_time">2013.7 ~ 2014.12</p>
+                </div>
+                <div class="edu_body">
+                  <p class="edu_job"><strong>웹퍼블리셔 / HTML5+CSS3 / 자바스크립트 / PHP</strong></p>
+                  <p class="edu_content">HTML5, CSS3, Bootstrap, Javascript, php, 웹표준/웹접근성에 대해 공부함</p>
+                </div>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experiences">
+          <header>
+            <h3>EXPERIENCES</h3>
+          </header>
+          <div class="timeline">
+            <ul class="timeline_list">
+              <li>
+                <div class="timeline_icon"><span class="timeline_breakpoint">2016</span></div>
+              </li>
+              <li>
+                <div class="timeline_icon">
+                  <img src="img/ico/khantech_ico.png" width="50" height="50" alt="칸테크">
+                </div>
+                <div class="timeline_time">
+                  <small>2014.6<br>~ 2015.4</small>
+                </div>
+                <div class="timeline_content">
+                  <p class="timeline_tit"><a href="#"><strong>칸테크 - 자바웹개발자</strong></a></p>
+                  <p class="timeline_breakdown">동국대학교, 영남대학교, 한양대학교, 인천대학교 등 각 학교의 성과관리 프로그램 유지보수 및 개발 참여.</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline_icon">
+                  <img src="img/ico/majoong_ico.png" width="50" height="50" alt="마중컨설팅">
+                </div>
+                <div class="timeline_time">
+                  <small>2013.1<br>~ 2014.5</small>
+                </div>
+                <div class="timeline_content">
+                  <p class="timeline_tit"><a href="#"><strong>(주)마중컨설팅 - 자바웹개발자</strong></a></p>
+                  <p class="timeline_breakdown">동국대학교, 영남대학교, 한양대학교, 인천대학교 등 각 학교의 성과관리 프로그램 유지보수 및 개발 참여.</p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline_icon"><span class="timeline_breakpoint">2013</span></div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- //본문 -->
+
+    <!-- 꼬릿말 -->
+    <footer id="footer">
+      <small class="copyright">© Copyright 2015 by gjjoo</small>
+    </footer>
+    <!-- //꼬릿말 -->
   </div>
-</div>
+  <!-- //전체페이지 -->
 
-<div id="tab_photos" class="photos tab_content">
-  <div class="photo">
-    <div class="photo-sizer"></div>
-    <a class="photo-item" href="img/myphotos/pic1.jpg" rel="photo" title="사진1">
-      <img src="img/myphotos/pic1.jpg" alt="pic1">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic2.jpg" rel="photo" title="사진2">
-      <img src="img/myphotos/pic2.jpg" alt="pic2">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic3.jpg" rel="photo" title="사진3">
-      <img src="img/myphotos/pic3.jpg" alt="pic3">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic4.jpg" rel="photo" title="사진4">
-      <img src="img/myphotos/pic4.jpg" alt="pic4">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic5.jpg" rel="photo" title="사진5">
-      <img src="img/myphotos/pic5.jpg" alt="pic5">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic6.jpg" rel="photo" title="사진6">
-      <img src="img/myphotos/pic6.jpg" alt="pic6">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic7.jpg" rel="photo" title="사진7">
-      <img src="img/myphotos/pic7.jpg" alt="pic7">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic1.jpg" rel="photo" title="사진8">
-      <img src="img/myphotos/pic1.jpg" alt="pic8">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic2.jpg" rel="photo" title="사진9">
-      <img src="img/myphotos/pic2.jpg" alt="pic9">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic3.jpg" rel="photo" title="사진10">
-      <img src="img/myphotos/pic3.jpg" alt="pic10">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic4.jpg" rel="photo" title="사진11">
-      <img src="img/myphotos/pic4.jpg" alt="pic11">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic5.jpg" rel="photo" title="사진12">
-      <img src="img/myphotos/pic5.jpg" alt="pic12">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic6.jpg" rel="photo" title="사진13">
-      <img src="img/myphotos/pic6.jpg" alt="pic13">
-    </a>
-    <a class="photo-item" href="img/myphotos/pic7.jpg" rel="photo" title="사진14">
-      <img src="img/myphotos/pic7.jpg" alt="pic14">
-    </a>
-  </div>
-</div>
-
-<div id="tab_skils" class="tab_content">
-  <div class="graphic_skils">
-    <header>
-      <h3>GRAPHIC SKILS</h3>
-    </header>
-    <div class="graphic_skils_content">
-      <p>PHOTOSHOP
-        <span class="ico_box">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star-o"></span>
-          <span class="fa fa-star-o"></span>
-          <span class="fa fa-star-o"></span>
-        </span>
-      </p>
-      <p>SKETCH
-        <span class="ico_box">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star-o"></span>
-          <span class="fa fa-star-o"></span>
-          <span class="fa fa-star-o"></span>
-        </span>
-      </p>
-    </div>
-  </div>
-
-  <div class="programming_skils">
-    <header>
-      <h3>PROGRAMMING SKILS</h3>
-    </header>
-    <div class="programming_skils_content">
-      <p>HTML &amp; CSS
-        <span class="ico_box">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-        </span>
-      </p>
-      <p>JAVASCRIPT
-        <span class="ico_box">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-          <i class="fa fa-star-o"></i>
-        </span>
-      </p>
-      <p>JAVA
-        <span class="ico_box">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-          <i class="fa fa-star-o"></i>
-        </span>
-      </p>
-      <p>PYTHON
-        <span class="ico_box">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-          <i class="fa fa-star-o"></i>
-        </span>
-      </p>
-      <p>SQL
-        <span class="ico_box">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-          <i class="fa fa-star-o"></i>
-        </span>
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="tab_experience" class="tab_content">
-  <article class="education">
-    <header>
-      <h3>EDUCATION</h3>
-    </header>
-    <div class="edu_list clear">
-      <ul>
-        <li>
-          <div class="edu_header">
-            <p class="edu_company"><strong>KIPFA</strong></p>
-            <p class="edu_time">2015.11 ~ 2016.1</p>
-          </div>
-          <div class="edu_body">
-            <p class="edu_job"><strong>SASS &amp; Framworks</strong></p>
-            <p class="edu_content">SASS는 물론 프레임웍인 Bourbon, Compass, Susy 등을 공부함</p>
-          </div>
-        </li>
-        <li>
-          <div class="edu_header">
-            <p class="edu_company"><strong>SK PLANET</strong></p>
-            <p class="edu_time">2015.11</p>
-          </div>
-          <div class="edu_body">
-            <p class="edu_job"><strong>NOSQL / Nodejs</strong></p>
-            <p class="edu_content">MongoDB, Redis, Hadoop, Node.js, Express 등을 공부함</p>
-          </div>
-        </li>
-        <li>
-          <div class="edu_header">
-            <p class="edu_company"><strong>모노라움</strong></p>
-            <p class="edu_time">2015.9 ~ 2015.11</p>
-          </div>
-          <div class="edu_body">
-            <p class="edu_job"><strong>웹퍼블리셔 마스터</strong></p>
-            <p class="edu_content">웹표준 및 웹접근서에 대해 학습하고, HTML / CSS / JAVASCRIPT 는 물론 반응형 웹, PC, 모바일에 대한 환경 코딩을 공부함</p>
-          </div>
-        </li>
-        <li>
-          <div class="edu_header">
-            <p class="edu_company"><strong>패스트캠퍼스</strong></p>
-            <p class="edu_time">2015.1 ~ 2016.1</p>
-          </div>
-          <div class="edu_body">
-            <p class="edu_job"><strong>프론트엔드 / UX디자인 / 웹서비스마스터</strong></p>
-            <p class="edu_content">UI/UX디자인, 자바스크립트, jQuery, Python, Django에 대해 공부함</p>
-          </div>
-        </li>
-        <li>
-          <div class="edu_header">
-            <p class="edu_company"><strong>그린아카데미</strong></p>
-            <p class="edu_time">2013.7 ~ 2014.12</p>
-          </div>
-          <div class="edu_body">
-            <p class="edu_job"><strong>웹퍼블리셔 / HTML5+CSS3 / 자바스크립트 / PHP</strong></p>
-            <p class="edu_content">HTML5, CSS3, Bootstrap, Javascript, php, 웹표준/웹접근성에 대해 공부함</p>
-          </div>
-        </li>
-        <li></li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="experiences">
-    <header>
-      <h3>EXPERIENCES</h3>
-    </header>
-    <div class="timeline">
-      <ul class="timeline_list">
-        <li>
-          <div class="timeline_icon"><span class="timeline_breakpoint">2016</span></div>
-        </li>
-        <li>
-          <div class="timeline_icon">
-            <img src="img/ico/khantech_ico.png" widivh="50" height="50" alt="칸테크">
-          </div>
-          <div class="timeline_time">
-            <small>2014.6<br>~ 2015.4</small>
-          </div>
-          <div class="timeline_content">
-            <p class="timeline_tit"><a href="#"><strong>칸테크 - 자바웹개발자</strong></a></p>
-            <p class="timeline_breakdown">동국대학교, 영남대학교, 한양대학교, 인천대학교 등 각 학교의 성과관리 프로그램 유지보수 및 개발 참여.</p>
-          </div>
-        </li>
-        <li>
-          <div class="timeline_icon">
-            <img src="img/ico/majoong_ico.png" width="50" height="50" alt="마중컨설팅">
-          </div>
-          <div class="timeline_time">
-            <small>2013.1<br>~ 2014.5</small>
-          </div>
-          <div class="timeline_content">
-            <p class="timeline_tit"><a href="#"><strong>(주)마중컨설팅 - 자바웹개발자</strong></a></p>
-            <p class="timeline_breakdown">동국대학교, 영남대학교, 한양대학교, 인천대학교 등 각 학교의 성과관리 프로그램 유지보수 및 개발 참여.</p>
-          </div>
-        </li>
-        <li>
-          <div class="timeline_icon"><span class="timeline_breakpoint">2013</span></div>
-        </li>
-      </ul>
-    </div>
-  </article>
-</div>
-
-<script>
-  $(function() {
-
+  <script src="js/libs/jquery/dist/jquery.min.js"></script>
+  <script src="js/vendor/jquery.sticky.js"></script>
+  <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+  <script src="js/vendor/isotope.pkgd.min.js"></script>
+  <script src="js/vendor/fancybox.pack.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
     $(".tab_content").hide();
     $(".tab_content:first").show();
 
@@ -288,6 +373,6 @@
 
       $(".photo-item").fancybox();
     });
-
-  });
-</script>
+  </script>
+</body>
+</html>

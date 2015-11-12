@@ -1,1 +1,140 @@
-contact
+<!doctype html>
+<!--[if !IE]><!-->
+<html lang="ko-KR" class="no-js">
+<!--<![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie lt-ie10 ie8 no-js"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie lt-ie10 ie9 no-js"><![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ZOO BLOG</title>
+  <meta name="description" content="blog,weblog,블로그">
+  <meta name="author" content="gjjoo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/vendor/modernizr-3.2.0.min.js"></script>
+  <script src="js/libs/detectizr/dist/detectizr.min.js"></script>
+
+  <script>
+    Detectizr.detect({detectScreen:false});
+  </script>
+
+</head>
+
+<body>
+  <!-- skip -->
+  <a href="#content" class="skip-to-main" role="button">본문 바로가기</a>
+
+  <!-- 전체페이지 -->
+  <div id="wrap">
+
+    <!-- 머릿말 -->
+    <header id="header">
+      <!-- 브랜드 및 로고 -->
+      <div id="brand">
+        <h1><a href="http://localhost:8080">ZOO BLOG</a><small>Glad to meet you!</small></h1>
+      </div>
+      <!-- //브랜드 및 로고 -->
+
+      <!-- 네비게이션 -->
+      <nav id="navigation">
+        <!-- 모바일용 메뉴 버튼 -->
+        <button type="button" class="btn toggle-menu"><i class="fa fa-bars fa-lg" role="button" aria-label="메뉴"></i>
+        </button>
+
+        <!-- 모바일용 사이드바 버튼 -->
+        <button class="btn toggle-sidebar"><i class="fa fa-cog fa-lg" role="button" aria-label="사이드바"></i>
+        </button>
+
+        <!-- 모바일용 페이지 제목 -->
+        <div class="title">
+          CONTACT
+        </div>
+
+        <!-- PC 및 모바일용 메뉴 -->
+        <div class="menu">
+          <ul>
+            <li><a href="/home.html">HOME</a>
+            </li>
+            <li><a href="/about.html">ABOUT</a>
+            </li>
+            <li><a href="/portfolio.html">PORTFOLIO</a>
+            </li>
+            <li><a href="/blog.html">BLOG</a>
+            </li>
+            <li class="active"><a href="/contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- //네비게이션 -->
+    </header>
+    <!-- //머릿말 -->
+
+    <!-- 본문 -->
+    <section id="content">
+      <div id="map"></div>
+      <div class="row contact">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <form action="/">
+            <input type="text" name="name" class="contact_input" placeholder="Name">
+            <input type="text" name="email" class="contact_input" placeholder="Email Address">
+            <textarea name="message" class="contact_input" rows="10" placeholder="Message"></textarea>
+            <button type="submit" class="btn_contact">SEND MESSAGE</button>
+          </form>
+        </div>
+        <div class="contact_info col-xs-12 col-sm-12 col-md-6">
+          <p class="contact_message">꼭 필요한 분만 연락 주시길 바래요~~~ 스팸 사절!
+            <br>모르는 전화번호는 안받습니다. 문자해주시면 감사하겠습니다.</p>
+          <p>
+            <i class="fa fa-envelope"></i><a href="#" class="contact_email">joogeunjae@google.com</a>
+            <br>
+            <i class="fa fa-phone"></i><a href="#" class="contact_phone">010-7108-2764</a>
+          </p>
+          <p class="contact_addr">대한민국 서울특별시
+            <br>동작구 사당동 어딘가..
+            <br>전만 좋고 경치 좋은 집에 사는중!</p>
+        </div>
+      </div>
+    </section>
+    <!-- //본문 -->
+
+    <!-- 꼬릿말 -->
+    <footer id="footer">
+      <small class="copyright">© Copyright 2015 by gjjoo</small>
+    </footer>
+    <!-- //꼬릿말 -->
+  </div>
+  <!-- //전체페이지 -->
+
+  <script src="js/libs/jquery/dist/jquery.min.js"></script>
+  <script src="js/vendor/jquery.sticky.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function initMap() {
+      var cairo = {lat: 37.486769, lng: 126.969820};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        scaleControl: true,
+        center: cairo,
+        zoom: 15
+      });
+
+      var infowindow = new google.maps.InfoWindow;
+      infowindow.setContent('<b>우리집 마당</b>');
+
+      var marker = new google.maps.Marker({map: map, position: cairo});
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7YBeA8X-ImTCAQZ4uXUr_NiGqYA4nqzQ&signed_in=true&callback=initMap" async defer></script>
+</body>
+
+</html>

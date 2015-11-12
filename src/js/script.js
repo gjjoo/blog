@@ -17,7 +17,9 @@ $(function() {
     $this.toggleClass('active');
   });
 
-  // 초기 페이지 로딩
+  $("#navigation").sticky({topSpacing:0});
+
+/*  // 초기 페이지 로딩
   loadURL('home.html', $('#content'), $('.menu li').eq(0).children());
 
   // 메뉴링크 클릭 시 페이지 로드
@@ -72,6 +74,6 @@ $(function() {
     // 모바일용 메뉴 타이틀 표시
     $('.title').text( item.text() );
     $('.toggle-menu').removeClass('active');
-  }
+  }*/
 
 });

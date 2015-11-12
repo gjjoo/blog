@@ -219,7 +219,7 @@ a { color: inherit; text-decoration: none; }
 #brand > h1 > small { display: block; font-size: 60%; color: #a8a8a8; }
 
 /** -------------------------------- 머릿말 > 네비게이션 -------------------------------- */
-#navigation { position: relative; background-color: #474544; color: #a8a8a8; }
+#navigation { position: relative; background-color: #474544; color: #a8a8a8; z-index: 10000; }
 
 #navigation > .btn { display: inline-block; width: 40px; height: 40px; padding: 6px 12px; margin-top: 1px; background-color: transparent; border: 0; color: #fff; }
 
@@ -502,6 +502,8 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 980px) { #sidebar { margin: 0; } }
 .sidebar_box { margin-bottom: 40px; }
 
+.sidebar_box:first-child { margin-top: 20px; }
+
 .sidebar_box h4 { font-size: 16px; font-weight: 600; color: #444; text-transform: uppercase; font-weight: 700; letter-spacing: normal; line-height: 27px; margin: 0 0 14px 0; }
 
 .cat_list { padding-left: 0; margin-top: 0; margin-bottom: 10px; }
@@ -554,7 +556,7 @@ a { color: inherit; text-decoration: none; }
 /** -------------------------------- BLOG_DETAIL PAGE -------------------------------- */
 .blog_sharebox { padding: 0 20px; border-bottom: 1px dashed #ccc; text-align: center; }
 
-.blog_sharebox .tag_list, .blog_sharebox .share_list, .blog_sharebox .leave_comment, .blog_sharebox .comment_list { padding-bottom: 10px; }
+.blog_sharebox .tag_list, .blog_sharebox .share_list, .blog_sharebox .leave_comment, .blog_sharebox .comment_list, .blog_sharebox .paper { padding-bottom: 10px; }
 
 .blog_sharebox h4 { margin: 10px 0; font-size: 14px; }
 
@@ -565,7 +567,7 @@ a { color: inherit; text-decoration: none; }
 .blog_sharebox li:last-child > a:after { content: ''; }
 
 /* Leave Comment */
-.leave_comment { text-align: left; }
+.leave_comment { margin-top: 20px; text-align: left; }
 
 .leave_comment textarea { display: block; width: 100%; border: 1px solid #ccc; overflow: hidden; resize: none; }
 
@@ -580,6 +582,7 @@ a { color: inherit; text-decoration: none; }
 
 .comment_list ul ul { margin-left: 80px; }
 
+@media (max-width: 980px) { .comment_list ul ul { margin-left: 40px; } }
 .comment_list li { display: block; }
 
 .comment_list h4 { font-size: 14px; }
@@ -588,4 +591,31 @@ a { color: inherit; text-decoration: none; }
 
 .comment_list .comment_reply, .comment_list p { font-size: 12px; }
 
+.comment_list p { margin-left: 80px; }
+
 .comment_list img { width: 60px; height: 60px; margin-right: 20px; float: left; }
+
+.paper { text-align: initial; margin: 20px 0; }
+
+.paper ul:after { content: ''; display: block; clear: both; }
+
+.paper a { display: inline-block; padding: 15px 14px; background-color: #fff; border: 1px solid #ddd; border-radius: 30px; }
+
+.previous { float: left; }
+
+.next { float: right; }
+
+/** -------------------------------- CONTACT PAGE -------------------------------- */
+#map { width: 100%; height: 350px; margin-top: -10px; }
+
+.contact { padding: 10px; line-height: 1.75em; }
+
+.contact_input { display: block; width: 100%; margin: 10px 0; border: 1px solid #ccc; padding: 10px; overflow: hidden; resize: none; }
+
+.btn_contact { width: 100%; border: 1px solid #434a54; padding: 12px 24px; background-color: #474544; color: #fff; }
+
+.contact_info { padding: 0 10px; }
+
+.contact_message, .contact_phone, .contact_email, .contact_addr { -webkit-font-smoothing: antialiased; color: #555; }
+
+.contact_email, .contact_phone { margin-left: 5px; color: #344375; }
