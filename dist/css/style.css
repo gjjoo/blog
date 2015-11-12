@@ -229,6 +229,8 @@ a { color: inherit; text-decoration: none; }
 
 #navigation .title { display: none; position: relative; padding: 1em 0 1em; font-weight: 600; color: #fff; }
 
+.menu { position: relative; opacity: 1; z-index: 1; }
+
 .menu > ul { margin: 0; padding: 0; list-style: none; }
 
 .menu > ul > li { display: inline-block; position: relative; text-transform: uppercase; }
