@@ -114,7 +114,7 @@ a {
   position: relative;
   background-color: #474544;
   color: #a8a8a8;
-  z-index: 101;
+  z-index: 100;
 }
 #navigation > .btn {
   display: inline-block;
@@ -140,11 +140,6 @@ a {
   padding: 1em 0 1em;
   font-weight: 600;
   color: #fff;
-}
-.menu {
-  position: relative;
-  opacity: 1;
-  z-index: 1;
 }
 .menu > ul {
   margin: 0;
@@ -214,12 +209,6 @@ a {
     margin-bottom: 0;
     border-radius: 0;
   }
-  #header {
-    z-index: 100;
-  }
-  #navigation {
-    z-index: 101;
-  }
   #navigation .title {
     display: inline-block;
   }
@@ -234,12 +223,10 @@ a {
   }
   #navigation > .toggle-menu.active ~ .menu {
     display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: relative;
     text-align: left;
     overflow-y: auto;
-    z-index: 102;
+    z-index: 1;
   }
   #navigation > .toggle-menu.active ~ .menu li {
     display: block;
@@ -248,9 +235,6 @@ a {
   }
   #navigation > .toggle-sidebar {
     display: block;
-  }
-  #content {
-    z-index: 100;
   }
 }
 
