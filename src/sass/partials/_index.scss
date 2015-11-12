@@ -141,6 +141,11 @@ a {
   font-weight: 600;
   color: #fff;
 }
+.menu {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
 .menu > ul {
   margin: 0;
   padding: 0;
