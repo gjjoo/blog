@@ -1,0 +1,30 @@
+{
+  "name": "zoo-blog",
+  "version": "0.0.1",
+  "description": "ZOO BLOG",
+  "author": "gjjoo <joogeunjae@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^2.0.1",
+    "run-sequence": "^1.1.2",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-if": "^1.2.5",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-size": "^2.0.0",
+    "gulp-uglifycss": "^1.0.4",
+    "gulp-watch": "^4.3.5",
+    "gulp-jshint": "^1.11.2",
+    "gulp-uglify": "^1.4.1",
+    "jshint-stylish": "^2.0.1",
+    "preen": "^1.2.0"
+  }
+}
