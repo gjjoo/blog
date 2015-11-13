@@ -1,13 +1,13 @@
 # project
 ###### 포트폴리오
-<img src="Assets/img/img.001.jpeg" alt="소개">
-<img src="Assets/img/img.002.jpeg" alt="목적">
-<img src="Assets/img/img.003.jpeg" alt="메뉴">
-<img src="Assets/img/img.004.jpeg" alt="시스템 환경설정">
-<img src="Assets/img/img.005.jpeg" alt="메뉴 구성도">
-<img src="Assets/img/img.006.jpeg" alt="전체일정">
-<img src="Assets/img/img.007.jpeg" alt="개발 상세일정">
-<img src="Assets/img/img.008.jpeg" alt="연락처">
+<img src="Assets/img/img01.jpg" alt="소개">
+<img src="Assets/img/img02.jpg" alt="목적">
+<img src="Assets/img/img03.jpg" alt="메뉴">
+<img src="Assets/img/img04.jpg" alt="시스템 환경설정">
+<img src="Assets/img/img05.jpg" alt="메뉴 구성도">
+<img src="Assets/img/img06.jpg" alt="전체일정">
+<img src="Assets/img/img07.jpg" alt="개발 상세일정">
+<img src="Assets/img/img08.jpg" alt="연락처">
 
 ###### 문제점
 >
