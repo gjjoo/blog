@@ -21,6 +21,7 @@
   top: 0;
   left: 0;
   z-index: 8020;
+  overflow: hidden;
 }
 
 .fancybox-skin {
@@ -194,6 +195,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
+  overflow: hidden;
 }
 
 .fancybox-lock .fancybox-overlay {
