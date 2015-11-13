@@ -1,4 +1,4 @@
-# project
+# ZOO BLOG
 ###### 포트폴리오
 <img src="Assets/img/img01.jpg" alt="소개">
 <img src="Assets/img/img02.jpg" alt="목적">
