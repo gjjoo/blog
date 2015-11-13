@@ -1,94 +1,85 @@
 <!doctype html>
-<!--[if !IE]><!-->
-<html lang="ko-KR" class="no-js">
-<!--<![endif]-->
-<!--[if IE 8]><html lang="ko-KR" class="ie lt-ie10 ie8 no-js"><![endif]-->
-<!--[if IE 9]><html lang="ko-KR" class="ie lt-ie10 ie9 no-js"><![endif]-->
-<head>
+<html lang="ko">
+  <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>ZOO BLOG</title>
-  <meta name="description" content="blog,weblog,블로그">
-  <meta name="author" content="gjjoo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>개인블로그:: 마크업 산출물</title>
+  <style>
+    @charset "utf-8";
+    /* Common */
+    body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+    body,input,textarea,select,button,table{font-size:14px;font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica;line-height:1.25em}
+    body{position:relative;background-color:#fff;color:#000;-webkit-text-size-adjust:none}
+    img,fieldset{border:0}
+    ul,ol{list-style:none}
+    em,address{font-style:normal}
+    a{color:#000;text-decoration:none}
 
-  <link rel="stylesheet" href="css/normalize/normalize.css">
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <script src="js/vendor/modernizr-3.2.0.min.js"></script>
-  <script src="js/libs/detectizr/dist/detectizr.min.js"></script>
-
-  <script>
-    Detectizr.detect({detectScreen:false});
-  </script>
-
+    /* index.html */
+    body{padding:0 14px;background-color:#fff;word-wrap:break-word;word-break:break-all}
+    header{padding:1em 4em .9em .1em;border-bottom:3px solid #222}
+    h1{font-size:1.2em}
+    h2,h3{clear:both;padding:1.2em .1em .4em;border-bottom:1px dotted #888;font-size:1em}
+    ul{font-size:.9em}
+    li{border-bottom:1px solid #dfdfdf}
+    li em{display:block;padding:.7em 31px .6em .1em;font-weight:bold}
+    li em:before{padding-right:6px;content:'|';color:red}
+    li a{display:block;padding:.7em 31px .6em .1em;zoom:1}
+    li span{margin-left:.4em;font-size:.86em;color:#909090}
+    li ul{border-top:1px solid #dfdfdf}
+    li ul li{padding-left:15px}
+    li ul li:last-child{border:0}
+    footer{clear:both;margin:2em 0;padding:6px 2px 2px;background:#f4f4f4;font-size:.86em;line-height:1.6em;color:#333;text-align:center}
+    dt,dd{display:inline;color:#333}
+    dt:after{display:inline;content:': '}
+    dd:last-of-type{display:block;color:#aaa}
+  </style>
 </head>
-<body>
-  <!-- skip -->
-  <a href="#content" class="skip-to-main" role="button">본문 바로가기</a>
 
-  <!-- 전체페이지 -->
-  <div id="wrap">
+<body class="<?php echo $uacssValue; ?>">
+<header>
+  <h1 class="hd_h1">개인블로그 :: 마크업 산출물</h1>
+</header>
 
-    <!-- 머릿말 -->
-    <header id="header">
-      <!-- 브랜드 및 로고 -->
-      <div id="brand">
-        <h1><a href="http://gjjoo.github.io/blog/dist/blog.html">ZOO BLOG</a><small>Glad to meet you!</small></h1>
-      </div>
-      <!-- //브랜드 및 로고 -->
+<section>
+  <h2>공통</h2>
+  <ul>
+    <li><a href="layout.html">layout<span>/ layout.html</span></a></li>
+  </ul>
 
-      <!-- 네비게이션 -->
-      <nav id="navigation">
-        <!-- 모바일용 메뉴 버튼 -->
-        <button type="button" class="btn toggle-menu"><i class="fa fa-bars fa-lg" role="button" aria-label="메뉴"></i></button>
+  <h2>메인</h2>
+  <ul>
+    <li><a href="home.html">메인<span>/ home.html</span></a></li>
+  </ul>
 
-        <!-- 모바일용 사이드바 버튼 -->
-        <button class="btn toggle-sidebar"><i class="fa fa-cog fa-lg" role="button" aria-label="사이드바"></i></button>
+  <h2>서브</h2>
+  <ul>
+    <li><a href="about.html">ABOUT<span>/ about.html</span></a></li>
+    <li><a href="portfolio.html">PORTFOLIO<span>/ portfolio.html</span></a></li>
+    <li>
+      <a href="blog.html">BLOG-1<span>/ blog.html</span></a>
+      <a href="blog2.html">BLOG-2<span>/ blog2.html</span></a>
+      <ul>
+        <li><a href="blog_detail.html">BLOG_DETAIL<span>/ blog_detail.html</span></a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">CONTACT<span>/ contact.html</span></a></li>
+  </ul>
 
-        <!-- 모바일용 페이지 제목 -->
-        <div class="title">
-          PORTFOLIO
-        </div>
+  <h3>모바일 확인용 QR코드</h3>
+  <img id="_im1" style="width:200px; height:200px">
+  <script type="text/javascript">
+  document.getElementById("_im1").src = 'http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl='+encodeURIComponent(location.href);
+  </script>
+</section>
 
-        <!-- PC 및 모바일용 메뉴 -->
-        <div class="menu">
-          <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- //네비게이션 -->
-    </header>
-    <!-- //머릿말 -->
+<footer>
+  <dl>
+  <dt>마크업 담당자</dt>
+  <dd>주근재 joogeunjae@gmail.com</dd>
+  </dl>
+</footer>
 
-    <!-- 본문 -->
-    <section id="content">
-      <!--
-        1. 일정 수준 이상 스크롤 내렸을 경우 "TOP" 버튼 생성
-        2. 구글맵 움직이지 않도록 고정 - O
-       -->
-    </section>
-    <!-- //본문 -->
-
-    <!-- 꼬릿말 -->
-    <footer id="footer">
-      <small class="copyright">© Copyright 2015 by gjjoo</small>
-    </footer>
-    <!-- //꼬릿말 -->
-  </div>
-  <!-- //전체페이지 -->
-
-  <script src="js/libs/jquery/dist/jquery.min.js"></script>
-  <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-  <script src="js/vendor/masonry.pkgd.min.js"></script>
-  <script src="js/vendor/isotope.pkgd.min.js"></script>
-  <script src="js/vendor/fancybox.pack.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
