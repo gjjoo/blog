@@ -1,8 +1,5 @@
 # project
 ###### 포트폴리오
-<style>
-  img { width: 200px; height: 200px; }
-</style>
 <img src="Assets/img/img.001.jpeg" alt="소개">
 <img src="Assets/img/img.002.jpeg" alt="목적">
 <img src="Assets/img/img.003.jpeg" alt="메뉴">
